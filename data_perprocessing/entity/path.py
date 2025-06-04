@@ -10,7 +10,7 @@ class Path(BasePath):
 
     def __build_path(self):
         self.lst_coverage_path = os.path.join(self.lst_path, "coverage")
-        self.annual_ta_path = os.path.join(self.ta_interpolate_path, "annual_ta")
+        self.annual_ta_path = os.path.join(self.DMAT_CLOUD_path, "annual_ta")
 
         self.cloud_lst_coverage_path = os.path.join(self.cloud_lst_path, "coverage")
         return self

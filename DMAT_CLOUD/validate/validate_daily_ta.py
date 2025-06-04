@@ -8,8 +8,8 @@ from common_object.enum import NodataEnum, ValidateModeEnum, ColumnsEnum
 from common_util.common import convert_to_list, get_world_tile, exclude_finished_tile, concurrent_execute
 from common_util.document import to_csv, merge_csv, handle_null
 from common_util.image import read_raster
-from ta_estimate.value_extract.value_extract import extract_value_from_tif
-from ta_interpolate.entity import Path, Dataset
+from DMAT_CLEAR.value_extract.value_extract import extract_value_from_tif
+from DMAT_CLOUD.entity import Path, Dataset
 
 
 def gather_validate_data_by_tile(path: Path, tile, year_list, validate_mode, lock=None):

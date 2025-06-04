@@ -11,7 +11,7 @@ from common_util.common import convert_to_list, convert_enum_to_value, get_world
 from common_util.date import get_date_interval
 from common_util.document import to_csv, merge_csv
 from common_util.image import read_raster
-from ta_estimate.entity.path import Path
+from DMAT_CLEAR.entity.path import Path
 
 
 def extract_value_from_tif(value_arr, value_nodata, field, station_arr, xindex_arr_1d, yindex_arr_1d, date):

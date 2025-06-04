@@ -9,8 +9,8 @@ from common_util.date import get_date_interval
 from common_util.document import to_csv
 from common_util.image import read_raster
 from common_util.path import create_path
-from ta_estimate.post_process import merge_ta
-from ta_interpolate.entity import Path
+from DMAT_CLEAR.post_process import merge_ta
+from DMAT_CLOUD.entity import Path
 
 
 def merge_daily_ta(path: Path, tile_list, date, region="world"):

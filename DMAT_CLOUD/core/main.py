@@ -19,9 +19,9 @@ from common_util.common import convert_to_list, exclude_finished_tile, get_world
 from common_util.document import to_csv
 from common_util.image import read_raster, create_raster
 from common_util.path import create_path
-from ta_interpolate.core.general_executor import GeneralExecutor
-from ta_interpolate.entity import Path, Configuration, Dataset
-from ta_interpolate.refer_date import get_refer_date
+from DMAT_CLOUD.core.general_executor import GeneralExecutor
+from DMAT_CLOUD.entity import Path, Configuration, Dataset
+from DMAT_CLOUD.refer_date import get_refer_date
 
 
 def get_model(model, gpu_id):

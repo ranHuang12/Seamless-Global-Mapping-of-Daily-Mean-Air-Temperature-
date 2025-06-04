@@ -9,7 +9,7 @@ from common_util.date import get_all_modis_date_by_year
 from common_util.document import to_csv
 from common_util.image import mosaic, read_raster
 from common_util.path import create_path
-from ta_estimate.entity import Configuration, Path
+from DMAT_CLEAR.entity import Configuration, Path
 
 
 def merge_ta(ta_file_list, ta_file, record_file, field, date):

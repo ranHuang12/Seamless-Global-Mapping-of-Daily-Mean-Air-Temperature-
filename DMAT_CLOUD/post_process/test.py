@@ -7,14 +7,14 @@ from enum import Enum
 from osgeo import gdal, gdalconst, ogr
 import os.path
 
-#from common_object.enum import NodataEnum
-#from common_util.common import get_world_tile
+from common_object.enum import NodataEnum
+from common_util.common import get_world_tile
 from common_util.date import get_date_interval
-#from common_util.document import to_csv
-#from common_util.image import read_raster
-#from common_util.path import create_path
-#from ta_estimate.post_process import merge_ta
-#from ta_interpolate.entity import Path
+from common_util.document import to_csv
+from common_util.image import read_raster
+from common_util.path import create_path
+from DMAT_CLEAR.post_process import merge_ta
+from DMAT_CLOUD.entity import Path
 
 
 def read_hdf(file, layer_list, type_list=None):
@@ -52,7 +52,7 @@ def mosaic(src_file_list, dst_file, src_nodata, dst_nodata, output_type=gdalcons
     print(dst_file)
 
 
-
+modis_data_path = r'D:\All_data\modis_data'
 def get_world_tile(inland=None, vi=None, pixel_limit=0):
     tile_df = pd.read_csv(os.path.join(modis_data_path, "land_tile_list.csv"))
     if inland is not None:
@@ -180,7 +180,7 @@ def merge_daily_ta(path: Path, tile_list, date, region="world"):
 
 
 
-def main()
+def main():
     tile_list = get_world_tile()
     for date in [2022099, 2022285, 2022101, 2022102]:
         merge_daily_ta(tile_list, date)

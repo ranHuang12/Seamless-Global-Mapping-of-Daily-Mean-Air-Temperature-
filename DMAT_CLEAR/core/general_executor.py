@@ -4,7 +4,7 @@ import numpy as np
 from common_object.entity import Accuracy
 from common_object.enum import ModelEnum
 from common_util.array import inverse_transform
-from ta_estimate.core.base_executor import BaseExecutor
+from DMAT_CLEAR.core.base_executor import BaseExecutor
 
 
 class GeneralExecutor(BaseExecutor):

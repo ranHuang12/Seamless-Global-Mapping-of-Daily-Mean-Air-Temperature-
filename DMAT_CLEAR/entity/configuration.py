@@ -1,5 +1,5 @@
 from common_object.entity import QcMode
-from ta_estimate.entity.path import Path
+from DMAT_CLEAR.entity.path import Path
 
 
 class Configuration(object):

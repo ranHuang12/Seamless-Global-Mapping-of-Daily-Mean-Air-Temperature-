@@ -6,7 +6,7 @@ import pandas as pd
 from common_object.enum import NodataEnum
 from common_util.document import to_csv
 from common_util.image import read_raster
-from ta_interpolate.entity import Path
+from DMAT_CLOUD.entity import Path
 
 
 def calculate_ta_with_lat(path: Path, month_list, lat_width=1):

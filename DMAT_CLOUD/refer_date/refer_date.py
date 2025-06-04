@@ -8,7 +8,7 @@ from common_util.common import get_world_tile, convert_to_list
 from common_util.date import get_date_interval, get_interval_date
 from common_util.document import to_csv
 from common_util.image import read_raster, csv_join_shp
-from ta_interpolate.entity import Path
+from DMAT_CLOUD.entity import Path
 
 
 def get_nearest_date(target_date, refer_date_list):
@@ -63,27 +63,27 @@ def generate_refer_dates(path: Path, tile_list, append=False, append_year_list=N
     for tile in tile_list:
         mask_arr = read_raster(os.path.join(path.cloud_mask_path, f"mask_{tile}.tif"))[0]
         mask_pixel_count = mask_arr[mask_arr != NodataEnum.MASK.value].size
-        ta_estimate_result_df = pd.read_csv(os.path.join(path.cloud_estimate_record_path, f"estimate_result_{tile}.csv"), usecols=["DATE", "SUM"]).sort_values("SUM", ascending=False)
-        date_list = ta_estimate_result_df["DATE"].values
+        DMAT_CLEAR_result_df = pd.read_csv(os.path.join(path.cloud_estimate_record_path, f"estimate_result_{tile}.csv"), usecols=["DATE", "SUM"]).sort_values("SUM", ascending=False)
+        date_list = DMAT_CLEAR_result_df["DATE"].values
         refer_date_file = os.path.join(path.cloud_refer_date_path, f"refer_date_{tile}.csv")
-        append_ta_estimate_result_df = None
+        append_DMAT_CLEAR_result_df = None
         original_refer_date_df = None
         original_refer_date_list = None
         append_date_list = None
         if append:
-            append_ta_estimate_result_df = ta_estimate_result_df[ta_estimate_result_df["DATE"].map(lambda date: date // 1000).isin(append_year_list)]
+            append_DMAT_CLEAR_result_df = DMAT_CLEAR_result_df[DMAT_CLEAR_result_df["DATE"].map(lambda date: date // 1000).isin(append_year_list)]
             original_refer_date_df = pd.read_csv(refer_date_file)
             original_refer_date_list = original_refer_date_df["DATE"].values
-            append_date_list = append_ta_estimate_result_df["DATE"].values
+            append_date_list = append_DMAT_CLEAR_result_df["DATE"].values
         for use_adjacent_years in [False, True]:
             index = search_index_for_refer_dates(append_date_list if append else date_list, use_adjacent_years, append, original_refer_date_list)
             count = original_refer_date_list.size + index
             if count < date_list.size * 0.3:
                 break
         if append:
-            refer_date_df = pd.concat([original_refer_date_df, append_ta_estimate_result_df[:index]]).sort_values("SUM", ascending=False)
+            refer_date_df = pd.concat([original_refer_date_df, append_DMAT_CLEAR_result_df[:index]]).sort_values("SUM", ascending=False)
         else:
-            refer_date_df = ta_estimate_result_df[:index]
+            refer_date_df = DMAT_CLEAR_result_df[:index]
         to_csv(refer_date_df, refer_date_file, False)
         sum_arr = refer_date_df["SUM"].values
         min_pixel = np.min(sum_arr)

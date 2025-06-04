@@ -28,8 +28,8 @@ class BasePath(object):
         self.latitude_path = os.path.join(self.auxiliary_data_path, "latitude")
         self.longitude_path = os.path.join(self.auxiliary_data_path, "longitude")
         self.climate_path = os.path.join(self.auxiliary_data_path, "climate")
-        self.ta_estimate_path = os.path.join(root_path, "ta_estimate")
-        self.ta_interpolate_path = os.path.join(root_path, "ta_interpolate")
+        self.DMAT_CLEAR_path = os.path.join(root_path, "DMAT_CLEAR")
+        self.DMAT_CLOUD_path = os.path.join(root_path, "DMAT_CLOUD")
 
         self.cloud_modis_data_path = os.path.join(cloud_root_path, "MODISData")
         self.cloud_lst_path = os.path.join(cloud_root_path, "lst")
@@ -40,8 +40,8 @@ class BasePath(object):
         self.cloud_longitude_path = os.path.join(self.cloud_auxiliary_data_path, "longitude")
         self.cloud_climate_path = os.path.join(self.cloud_auxiliary_data_path, "climate")
         self.cloud_xy_index_path = os.path.join(self.cloud_auxiliary_data_path, "xy_index")
-        self.cloud_ta_estimate_path = os.path.join(cloud_root_path, "ta_estimate")
-        self.cloud_ta_interpolate_path = os.path.join(cloud_root_path, "ta_interpolate")
+        self.cloud_DMAT_CLEAR_path = os.path.join(cloud_root_path, "DMAT_CLEAR")
+        self.cloud_DMAT_CLOUD_path = os.path.join(cloud_root_path, "DMAT_CLOUD")
         self.cloud_picture_path = os.path.join(cloud_root_path, "picture")
         self.cloud_table_path = os.path.join(cloud_root_path, "table")
 

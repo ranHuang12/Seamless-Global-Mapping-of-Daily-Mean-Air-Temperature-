@@ -9,7 +9,7 @@ from common_util.date import get_all_date_by_year, get_interval_date
 from common_util.document import to_csv
 from common_util.image import read_raster, create_raster
 from common_util.path import create_path
-from ta_interpolate.entity import Path
+from DMAT_CLOUD.entity import Path
 
 
 def get_nearest_file(path: Path, tile, date, front=True):

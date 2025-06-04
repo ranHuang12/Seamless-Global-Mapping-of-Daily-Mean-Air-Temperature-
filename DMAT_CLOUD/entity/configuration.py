@@ -1,4 +1,4 @@
-from ta_interpolate.entity.path import Path
+from DMAT_CLOUD.entity.path import Path
 
 
 class Configuration(object):

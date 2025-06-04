@@ -2,7 +2,7 @@ import pandas as pd
 
 from common_object.entity.base_dataset import BaseDataset
 from common_object.enum import ColumnsEnum, ValidateModeEnum
-from ta_interpolate.entity.path import Path
+from DMAT_CLOUD.entity.path import Path
 
 
 class Dataset(BaseDataset):

@@ -12,8 +12,8 @@ from common_util.array import build_modeling_arr_from_df, inverse_transform
 from common_util.common import build_modeling_x_list, convert_enum_to_value
 from common_util.date import get_date_interval
 from common_util.document import to_csv, handle_null
-from ta_estimate.entity.configuration import Configuration
-from ta_estimate.entity.dataset import Dataset
+from DMAT_CLEAR.entity.configuration import Configuration
+from DMAT_CLEAR.entity.dataset import Dataset
 
 
 class BaseExecutor(object):

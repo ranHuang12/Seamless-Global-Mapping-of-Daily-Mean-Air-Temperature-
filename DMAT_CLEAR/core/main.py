@@ -19,13 +19,13 @@ from common_util.date import get_all_modis_date_by_year
 from common_util.document import to_csv, merge_csv, handle_null
 from common_util.image import read_raster, create_raster
 from common_util.path import create_path
-from ta_estimate.core.general_executor import GeneralExecutor
-from ta_estimate.entity.configuration import Configuration
-from ta_estimate.entity.dataset import Dataset
-from ta_estimate.module.cnn import CNN
-from ta_estimate.module.cnn_lstm import CNNLSTM
-from ta_estimate.module.cnn_lstm_attn import CNNLSTMAttention
-from ta_estimate.module.fc import FC
+from DMAT_CLEAR.core.general_executor import GeneralExecutor
+from DMAT_CLEAR.entity.configuration import Configuration
+from DMAT_CLEAR.entity.dataset import Dataset
+from DMAT_CLEAR.module.cnn import CNN
+from DMAT_CLEAR.module.cnn_lstm import CNNLSTM
+from DMAT_CLEAR.module.cnn_lstm_attn import CNNLSTMAttention
+from DMAT_CLEAR.module.fc import FC
 
 
 def get_model(model, feature_size=0, time_size=1):

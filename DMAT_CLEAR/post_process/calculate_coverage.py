@@ -3,7 +3,7 @@ import os
 from common_util.common import convert_to_list, get_world_tile, concurrent_execute
 from common_util.path import create_path
 from data_perprocessing.modis.calculate_coverage import calculate_single_coverage_by_tile, merge_coverage
-from ta_estimate.entity import Path
+from DMAT_CLEAR.entity import Path
 
 
 def calculate_coverage_by_tile(path: Path, tile, year_list, stack, lock=None):

@@ -6,8 +6,8 @@ import numpy as np
 from torch.utils.data import TensorDataset, DataLoader, Dataset
 from torch.optim import Adam, SGD
 
-from ta_estimate.module.rbm import RBM
-from ta_estimate.module.genCsvData import indefDataSet
+from DMAT_CLEAR.module.rbm import RBM
+from DMAT_CLEAR.module.genCsvData import indefDataSet
 
 
 class DBN(nn.Module):

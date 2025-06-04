@@ -9,10 +9,10 @@ from torch.utils.data import DataLoader
 from common_object.entity import Accuracy
 from common_object.enum import ViewEnum
 from common_util.array import inverse_transform
-from ta_estimate.core.base_executor import BaseExecutor
-from ta_estimate.entity import Path
-from ta_estimate.entity.configuration import Configuration
-from ta_estimate.entity.dl_dataset import DLDataset
+from DMAT_CLEAR.core.base_executor import BaseExecutor
+from DMAT_CLEAR.entity import Path
+from DMAT_CLEAR.entity.configuration import Configuration
+from DMAT_CLEAR.entity.dl_dataset import DLDataset
 
 
 def set_reproducible():

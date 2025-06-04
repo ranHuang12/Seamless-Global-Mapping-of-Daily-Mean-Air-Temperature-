@@ -10,8 +10,8 @@ from common_util.date import get_all_date_by_month, get_day_num_by_month, get_da
 from common_util.document import to_csv
 from common_util.image import read_raster, create_raster, process_image_with_args
 from common_util.path import create_path
-from ta_estimate.post_process import merge_ta
-from ta_interpolate.entity import Path
+from DMAT_CLEAR.post_process import merge_ta
+from DMAT_CLOUD.entity import Path
 
 
 def create_annual_monthly_ta_by_tile(path: Path, tile, year_list):

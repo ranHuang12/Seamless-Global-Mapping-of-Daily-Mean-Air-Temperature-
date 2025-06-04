@@ -7,8 +7,8 @@ from common_object.entity import Accuracy
 from common_object.enum import ValidateModeEnum, ColumnsEnum
 from common_util.common import get_world_tile
 from common_util.document import to_csv, handle_null
-from ta_interpolate.entity import Path, Dataset
-from ta_interpolate.validate.validate_daily_ta import get_validate_df_by_mode
+from DMAT_CLOUD.entity import Path, Dataset
+from DMAT_CLOUD.validate.validate_daily_ta import get_validate_df_by_mode
 
 
 def validate_by_station(path: Path, validate_df, validate_mode):

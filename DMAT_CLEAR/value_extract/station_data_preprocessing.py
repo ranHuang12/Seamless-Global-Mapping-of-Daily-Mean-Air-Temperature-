@@ -9,7 +9,7 @@ from common_object.enum import ColumnsEnum, NodataEnum, SRSEnum
 from common_util.common import get_world_tile
 from common_util.document import to_csv, merge_csv
 from common_util.image import read_raster, create_raster
-from ta_estimate.entity.path import Path
+from DMAT_CLEAR.entity.path import Path
 
 
 def gather_station_from_gsod(path: Path, year_list):

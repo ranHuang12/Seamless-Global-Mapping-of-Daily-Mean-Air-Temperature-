@@ -1,7 +1,7 @@
 import cupy
 
 from common_util.array import inverse_transform
-from ta_interpolate.entity import Configuration, Dataset
+from DMAT_CLOUD.entity import Configuration, Dataset
 
 
 class GeneralExecutor(object):

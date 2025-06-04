@@ -1,3 +1,3 @@
-from ta_interpolate.entity.configuration import Configuration
-from ta_interpolate.entity.dataset import Dataset
-from ta_interpolate.entity.path import Path
+from DMAT_CLOUD.entity.configuration import Configuration
+from DMAT_CLOUD.entity.dataset import Dataset
+from DMAT_CLOUD.entity.path import Path
