@@ -1,0 +1,1 @@
+TA_LST.py -start 2001 -end 2020 -year [2009] -lst F:\LST_006\China\MYD11A1\h28v05\ -reflec D:\TA\reflectance\ -dem D:\TA\DEM\ -shp D:\TA\zhejiang.shp -station D:\TA\mete_data\zhejiang_station.xlsx -mete D:\TA\mete_data\ -out D:\TA\out\ -tile ['h28v05','h28v06'] -l_type ['MOD'] -time [0,1] -s_type 1 -model 1
