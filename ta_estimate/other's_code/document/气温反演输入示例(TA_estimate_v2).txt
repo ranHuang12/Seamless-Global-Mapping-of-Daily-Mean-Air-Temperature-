@@ -1,0 +1,3 @@
+TA_estimate.py -start 2007 -end 2011 -year [2010] -lst D:\TA\LST\ -reflec D:\TA\reflectance\ -dem D:\TA\DEM\ -shp D:\TA\zhejiang.shp -station D:\TA\mete_data\zhejiang_station.xlsx -mete D:\TA\mete_data\ -out D:\TA\out\ -tile ['h28v05','h28v06'] -l_type ['MOD'] -time [0,1] -s_type 1 -model 1
+
+-start 2009 -end 2011 -year [2010] -lst I:\TA\DATA\LST\ -reflec I:\TA\DATA\reflectance\ -dem I:\TA\DATA\DEM\ -shp I:\TA\DATA\zhejiang\zhejiang.shp -station I:\TA\DATA\mete_data\zhejiang_station.xlsx -mete I:\TA\DATA\mete_data\ -out  I:\TA\DATA\out\ -tile ['h28v05','h28v06'] -l_type ['MOD'] -time [0,1] -s_type 1 -model 1

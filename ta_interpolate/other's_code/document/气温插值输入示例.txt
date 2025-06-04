@@ -1,0 +1,3 @@
+TA_interpolation.py -start 2010 -end 2010 -TA I:\TA\DATA\out\ -lc I:\TA\DATA\landcover\ -shp I:\TA\DATA\zhejiang\zhejiang.shp -out  I:\TA\DATA\TA_interpolation\ -tile ['h28v05','h28v06'] -sq_list [11] -Th 0.6
+
+-start 2010 -end 2010 -TA I:\TA\DATA\out\ -lc I:\TA\DATA\landcover\ -shp I:\TA\DATA\zhejiang\zhejiang.shp -out  I:\TA\DATA\TA_interpolation\ -tile ['h28v05','h28v06'] -sq_list [11,12] -Th 0.6
