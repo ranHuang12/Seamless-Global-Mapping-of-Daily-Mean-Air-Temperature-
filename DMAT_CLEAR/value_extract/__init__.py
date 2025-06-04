@@ -1,0 +1,1 @@
+from DMAT_CLEAR.value_extract.value_extract import extract_value_from_path
