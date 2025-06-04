@@ -1,1 +1,11 @@
-# Seamless-Global-Mapping-of-Daily-Mean-Air-Temperature-
+1 首先就是数据下载，该代码在data_download下的modis_data_download里，其中一个get_url是下载数据链接，file_download是根据链接进行数据下载，先get_url再进行file_download
+
+2 需要用位于data_perprocessing下面modis里的convert_hdf_to_tif对下载的modis数据进行转化成tif，其次就是辅助数据的生成，该代码位于data_perprocessing中，其中包括latitude,longitude,dem,mask,xy_index等数据生成代码，可以在相应的文件夹找到相应的代码。
+代码的命名代表代码大致的功能。
+
+3 在ta_estimate中它的主要代码作用是获取建模数据，然后建立模型，再用模型进行睛空气温的估算。在ta_estimate中的value_extract里面，station_data_preprocessing是对站点数据进行预处理，value_extract是提取相应tile上的站点数据和LST数据，获取建模数据样本。
+在core中主函数main，它的作用有两个，一个是建立模型，另一个是通过模型进行睛空气温数据的一个估算。
+
+4 在ta_interpolate中先是用refer_date得到参考日期，然后在core中主函数main首先对参考日期进行插值，其次再对非参考日期进行插值。最后再用temporal_interpolate进行线性插值，得到最终的无缝气温数据。
+
+5 在ta_interpolate中validate这部分代码是用来验证最终生成的无缝气温数据集的精度，包括对参考日期气温数据，非参考日期气温数据以及整体的无缝气温数据集的精度验证。
