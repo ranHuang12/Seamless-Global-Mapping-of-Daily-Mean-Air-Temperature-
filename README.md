@@ -1,3 +1,4 @@
+Folders
 1. Data Preprocessing: 
 Includes the extraction of LST, EVI, LONG, LAT, ANG, M, and DOY from TERRA/AQUA MODIS products, and H from GVE products；filtering and interpolating EVI time series.
 
