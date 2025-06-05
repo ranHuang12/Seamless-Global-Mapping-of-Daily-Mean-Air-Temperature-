@@ -2,7 +2,7 @@
 # A Novel Scheme for Seamless Global Mapping of Daily Mean Air Temperature (SGM_DMAT) at 1-Kilometer Spatial Resolution Using Satellite and Auxiliary Data
 
 ## Project Overview
-This repository contains DFAA event characteristic data, DFAA time series chart data, DFAA driver analysis results, as well as code for calculating SWAP indexes, code for extracting DFAA events, and code for Pettitt mutation tests.
+This repository contains code for Data Preprocessing,code for DMAT_CLEAR estimation,and code for DMAT_CLOUD estimation,as well as Global DMAT datasets .
 
 ## Folders
 
